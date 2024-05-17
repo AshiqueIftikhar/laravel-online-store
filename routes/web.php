@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
-use App\Http\Controllers\AdminHomeController;
+use App\Http\Controllers\Admin\AdminHomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +23,4 @@ Route::get('/products', [ProductController::class, 'index'])->name('product.inde
 Route::get('/proucts/{id}', [ProductController::class, 'show'])->name('product.show');
 
 Route::get('/admin',[AdminHomeController::class, 'index'])->name('admin.home.index');
+Route::get('/admin/products', [AdminProductController::class, 'index'])->name('admin.product.index');
