@@ -30,7 +30,7 @@ class Product extends Model
 
     public function getName()
     {
-        return $this->attributes['name'];
+        return strtoupper($this->attributes['name']);
     }
     public function setName($name)
     {
