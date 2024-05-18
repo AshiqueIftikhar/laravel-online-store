@@ -29,3 +29,6 @@ Route::post('/admin/products/store', [AdminProductController::class, 'store'])->
 Route::delete('/admin/products/{id}/delete', [AdminProductController::class, 'delete'])->name('admin.product.delete');
 Route::get('/admin/products/{id}/edit',[AdminProductController::class, 'edit'])->name('admin.product.edit');
 Route::put('/admin/products/{id}/update', [AdminProductController::class, 'update'])->name('admin.product.update');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
