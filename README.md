@@ -1,8 +1,8 @@
-## Laravel Online Store
+# Laravel Online Store
 
 This is a simple online store created using Laravel Framework.
 
-# Features
+## Features
 
 - Users can buy items from the store.
 - Admin panel to manage the online store.
